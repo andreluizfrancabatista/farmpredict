@@ -1,0 +1,13 @@
+Aja como um desenvolvedor web. Vamos criar uma aplicação usando React no frontend, nodejs no backend. O nome da aplicação é FarmPredict.
+
+Sobre a persistência de dados, inicialmente os dados serão fornecidos por meio de um link de um arquivo CSV. Mas posteriormente os dados serão fornecidos por meio de uma API rest. Então, inicialmente considere o  fornecimento de dados por meio de um arquivo CSV via link, mas já considere que no futuro o fornecimento de dados será alterado para uma API rest.
+
+Crie os arquivos como artefatos separadamente.
+
+Crie também um readme.md.
+
+Essa aplicação apresentará dados oriundos de colheita de cana. Os dados são: id da frente (equipe), id da colhedora, status da colhedora, toneladas por dia (ton/dia), toneladas por hora (ton/hr), tempo produtivo (hh:mm), toneladas por hora efetiva (ton/hr efetiva). 
+
+A aplicação recebe os seguintes dados: id da frente (equipe), id da colhedora, status da colhedora, toneladas por dia (ton/dia),  tempo produtivo (hh:mm). 
+
+A partir desses dados, a aplicação calcula os outros dados: toneladas por hora (ton/hr), e toneladas por hora efetiva (ton/hr efetiva). Toneladas por hora é calculado assim: toneladas por dia dia dividido pela diferença entre o horário atual e meia noite. Exemplo:
