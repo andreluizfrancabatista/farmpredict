@@ -1,6 +1,7 @@
 # FarmPredict
 
 Aplicação web para análise e predição de dados de colheita de cana-de-açúcar.
+!["preview.png"](preview.png)
 
 ## Tecnologias Utilizadas
 
