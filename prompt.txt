@@ -6,8 +6,22 @@ Crie os arquivos como artefatos separadamente.
 
 Crie também um readme.md.
 
+Crie também um .gitignore para esse projeto.
+
 Essa aplicação apresentará dados oriundos de colheita de cana. Os dados são: id da frente (equipe), id da colhedora, status da colhedora, toneladas por dia (ton/dia), toneladas por hora (ton/hr), tempo produtivo (hh:mm), toneladas por hora efetiva (ton/hr efetiva). 
 
 A aplicação recebe os seguintes dados: id da frente (equipe), id da colhedora, status da colhedora, toneladas por dia (ton/dia),  tempo produtivo (hh:mm). 
 
-A partir desses dados, a aplicação calcula os outros dados: toneladas por hora (ton/hr), e toneladas por hora efetiva (ton/hr efetiva). Toneladas por hora é calculado assim: toneladas por dia dia dividido pela diferença entre o horário atual e meia noite. Exemplo:
+A partir desses dados, a aplicação calcula os outros dados: toneladas por hora (ton/hr), e toneladas por hora efetiva (ton/hr efetiva). Toneladas por hora é calculado assim: toneladas por dia dividido pela horário atual. Exemplo: horario atual é 11h30, toneladas por dia é 200, então toneladas por hora é 200/11.5 = 17.3913
+
+Toneladas por hora efetiva é calculado assim: toneladas por dia dividido por tempo produtivo. Exemplo: tempo produtivo é 03:30, toneladas por dia é 200, então toneladas por hora efetiva é 200/3.5 = 57.1429
+
+Na tela da aplicação, coloque o título: FarmPredict, centralizado no topo da página.
+
+Logo abaixo coloque um menu suspenso para escolha de um horário (00:00, 01:00, 02:00, ..., 21:00, 22:00, 23:00). Ao lado, coloque um botão 'carregar'. Esse botão 'carregar' vai carregar um csv que tem a seguinte url base: https://github.com/andreluizfrancabatista/farmpredict/blob/main/data/painel-{hora}.csv onde {hora} virá do menu suspenso. Por exemplo: se o usuário escolheu 11:00 no menu, a url do csv será https://github.com/andreluizfrancabatista/farmpredict/blob/main/data/painel-11h00.csv
+
+Logo abaixo divida a tela da aplicação em duas áreas verticais. Uma linha com duas colunas. Na coluna da esquerda apresente os dados que virão do csv. Os dados serão mostrados no formato de tabela com as colunas: Equipamento, Ton/Dia, Ton/Hora, Tempo Produtivo, Ton/Hora efetiva.
+
+Na coluna da esquerda, deixe um espaço reservado para uma aplicação que vou te explicar em outro momento.
+
+Elabore um .gitignore para esse projeto.
