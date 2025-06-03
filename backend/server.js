@@ -21,9 +21,21 @@ function convertTimeToHours(timeString) {
 
 // Função para calcular métricas
 function calculateMetrics(data, currentHour) {
+  // 🔍 LOG PARA DEBUG - mostra as colunas disponíveis no CSV
+  if (data.length > 0) {
+    console.log('📊 Colunas disponíveis no CSV:', Object.keys(data[0]));
+    console.log('📄 Primeira linha de dados:', data[0]);
+  }
+
   return data.map(row => {
-    const tonPerDay = parseFloat(row['toneladas_por_dia'] || row['ton_dia'] || 0);
-    const productiveTime = convertTimeToHours(row['tempo_produtivo'] || '0:00');
+    // 🎯 MAPEAMENTO CORRETO PARA AS COLUNAS DO CSV
+    const tonPerDay = parseFloat(
+      row['Toneladas por dia (acumulada)'] || 0
+    );
+    
+    const productiveTime = convertTimeToHours(
+      row['Tempo produtivo (acumulado)'] || '0:00'
+    );
     
     // Toneladas por hora = toneladas por dia / hora atual
     const tonPerHour = currentHour > 0 ? tonPerDay / currentHour : 0;
@@ -32,12 +44,12 @@ function calculateMetrics(data, currentHour) {
     const tonPerHourEffective = productiveTime > 0 ? tonPerDay / productiveTime : 0;
     
     return {
-      equipamento: row['id_colhedora'] || row['equipamento'] || 'N/A',
-      frente: row['id_frente'] || row['frente'] || 'N/A',
-      status: row['status_colhedora'] || row['status'] || 'N/A',
+      equipamento: row['Código Equipamento'] || 'N/A',
+      frente: row['Descrição do Grupo de Equipamento'] || 'N/A',
+      status: row['Descrição do Grupo da Operação'] || 'N/A',
       tonDia: tonPerDay.toFixed(2),
       tonHora: tonPerHour.toFixed(4),
-      tempoProdutivo: row['tempo_produtivo'] || '00:00',
+      tempoProdutivo: row['Tempo produtivo (acumulado)'] || '00:00',
       tonHoraEfetiva: tonPerHourEffective.toFixed(4)
     };
   });
@@ -50,6 +62,8 @@ app.get('/api/data/:hour', async (req, res) => {
     
     // Converter hora para formato do arquivo (ex: 11:00 -> 11h00)
     const formattedHour = hour.replace(':', 'h');
+    
+    // 🔗 CONFIGURAÇÃO DO LINK CSV - MODIFIQUE AQUI SE NECESSÁRIO
     const csvUrl = `https://raw.githubusercontent.com/andreluizfrancabatista/farmpredict/main/data/painel-${formattedHour}.csv`;
     
     console.log(`Tentando carregar: ${csvUrl}`);
