@@ -215,6 +215,10 @@ for h in range(1, 24):
     
     df_final = df_agrupado[colunas_finais].copy()
     
+    # 🔢 ORDENA POR CÓDIGO DO EQUIPAMENTO (convertendo para int)
+    df_final['Código Equipamento'] = pd.to_numeric(df_final['Código Equipamento'], errors='coerce')
+    df_final = df_final.sort_values('Código Equipamento').reset_index(drop=True)
+    
     # Gera o nome do arquivo
     nome_arquivo = f'../data/painel-{h:02d}h00.csv'
     
