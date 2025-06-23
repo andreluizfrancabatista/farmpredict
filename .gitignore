@@ -118,11 +118,6 @@ public
 .yarn/install-state.gz
 .pnp.*
 
-# Create React App específico
-/frontend/build
-# NÃO ignore o public! Remova se estiver assim:
-# /frontend/public
-
 # Backend específico
 /backend/uploads/
 /backend/temp/
