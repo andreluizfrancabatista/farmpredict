@@ -1,8 +1,27 @@
 # FarmPredict
 
 Aplicação web inteligente para análise, estimativa e predição de dados de colheita de cana-de-açúcar com funcionalidades avançadas de business intelligence.
+## Preview
 !["preview.png"](images/preview.png)
+## Modelo
 !["estimativa.png"](images/estimativa.png)
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/andreluizfrancabatista/farmpredict)
+![License](https://img.shields.io/github/license/andreluizfrancabatista/farmpredict?cacheSeconds=60)
+![Top Language](https://img.shields.io/github/languages/top/andreluizfrancabatista/farmpredict)
+![Last Commit](https://img.shields.io/github/last-commit/andreluizfrancabatista/farmpredict)
+![Agricultural Analytics](https://img.shields.io/badge/agriculture-analytics-4CAF50?style=flat-square)
+![Sugar Cane](https://img.shields.io/badge/sugar_cane-harvest-8BC34A?style=flat-square)
+![Real Time Data](https://img.shields.io/badge/data-real_time-red?style=flat-square)
+![Business Intelligence](https://img.shields.io/badge/BI-intelligent-purple?style=flat-square)
+![Productivity](https://img.shields.io/badge/productivity-optimization-orange?style=flat-square)
+![Responsive Web](https://img.shields.io/badge/web_app-responsive-success?style=flat-square)
+
+![GitHub issues](https://img.shields.io/github/issues/andreluizfrancabatista/farmpredict?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/andreluizfrancabatista/farmpredict?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/andreluizfrancabatista/farmpredict?style=flat-square)
+![Maintenance](https://img.shields.io/badge/maintained-yes-green?style=flat-square)
+
 
 ## Tecnologias Utilizadas
 
