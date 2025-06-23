@@ -1,0 +1,4 @@
+atualize o readme.md da aplicação toda
+crie um documento tipo md para orientações de teste para o henrique testar e sugerir correções.
+
+crie as aplicações sugeridas em páginas separadas dessa aplicação. crie uma landing page com links que levarão para essa aplicação principal, e para as outras.
