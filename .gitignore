@@ -120,10 +120,8 @@ public
 
 # Create React App específico
 /frontend/build
-/frontend/.env.local
-/frontend/.env.development.local
-/frontend/.env.test.local
-/frontend/.env.production.local
+# NÃO ignore o public! Remova se estiver assim:
+# /frontend/public
 
 # Backend específico
 /backend/uploads/
