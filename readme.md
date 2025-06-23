@@ -1,26 +1,39 @@
 # FarmPredict
 
 Aplicação web inteligente para análise, estimativa e predição de dados de colheita de cana-de-açúcar com funcionalidades avançadas de business intelligence.
-## Preview
-!["preview.png"](images/preview.png)
-## Modelo
-!["estimativa.png"](images/estimativa.png)
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/andreluizfrancabatista/farmpredict)
 ![License](https://img.shields.io/github/license/andreluizfrancabatista/farmpredict?cacheSeconds=60)
 ![Top Language](https://img.shields.io/github/languages/top/andreluizfrancabatista/farmpredict)
 ![Last Commit](https://img.shields.io/github/last-commit/andreluizfrancabatista/farmpredict)
+
 ![Agricultural Analytics](https://img.shields.io/badge/agriculture-analytics-4CAF50?style=flat-square)
 ![Sugar Cane](https://img.shields.io/badge/sugar_cane-harvest-8BC34A?style=flat-square)
 ![Real Time Data](https://img.shields.io/badge/data-real_time-red?style=flat-square)
 ![Business Intelligence](https://img.shields.io/badge/BI-intelligent-purple?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/predictions-ML_ready-purple?style=flat-square)
 ![Productivity](https://img.shields.io/badge/productivity-optimization-orange?style=flat-square)
 ![Responsive Web](https://img.shields.io/badge/web_app-responsive-success?style=flat-square)
+![CSV Processing](https://img.shields.io/badge/data_source-CSV-yellow?style=flat-square)
+![Equipment Monitoring](https://img.shields.io/badge/equipment-monitoring-blue?style=flat-square)
+![Harvest Prediction](https://img.shields.io/badge/harvest-prediction-orange?style=flat-square)
+![Farm Management](https://img.shields.io/badge/farm-management-green?style=flat-square)
+![Goal Tracking](https://img.shields.io/badge/goals-tracking-red?style=flat-square)
+
+![SCRUM](https://img.shields.io/badge/methodology-SCRUM-lightblue?style=flat-square)
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=node.js)
+![MVP Status](https://img.shields.io/badge/status-MVP-blue?style=flat-square)
 
 ![GitHub issues](https://img.shields.io/github/issues/andreluizfrancabatista/farmpredict?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/andreluizfrancabatista/farmpredict?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/andreluizfrancabatista/farmpredict?style=flat-square)
 ![Maintenance](https://img.shields.io/badge/maintained-yes-green?style=flat-square)
+
+## Preview
+!["preview.png"](images/preview.png)
+## Modelo
+!["estimativa.png"](images/estimativa.png)
 
 
 ## Tecnologias Utilizadas
